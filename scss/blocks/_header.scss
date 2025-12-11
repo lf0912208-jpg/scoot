@@ -1,0 +1,399 @@
+    .header {
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		z-index: 1111;
+		backdrop-filter: blur(5px);
+		background-color: rgba(255, 255, 255, 0.73);		
+		&_list {
+        @include df-row-between-center ;
+	    gap: 32px;
+		}
+
+		&__container {
+			padding-top: 22px;
+			padding-bottom: 22px;
+			@include df-row-between-center ;
+		}
+
+		&__left-box {
+			@include df-row-center-center ;
+			gap: 58.8px;
+		}
+
+		&__logo-link {
+			transition: 100ms ease all;
+			&:active{
+				transition: 100ms ease all;
+				opacity: 0.5;
+			}
+		}
+
+		&__logo-image {
+			vertical-align: middle;
+		}
+
+		&__nav {
+			display: block;
+		}
+
+		&__lists {
+	
+		}
+
+		&__links.online .header__links-texts{
+			color: $yellow;
+		}
+
+		&__links-texts {
+			  font-family: 'Space Mono';
+			  font-weight: bold;
+			  font-size: 15px;
+			  line-height: 25px;
+			  letter-spacing: 0px;
+			  color: $dim__grey;
+		}
+
+		&__button {
+			@include template-button;
+			display: block ;
+		}
+
+		&__burger-button {
+			display: none;
+			border: none;
+			outline: none;
+			background: none;
+		}
+
+		&__open-burger-icon {
+				vertical-align: middle;
+		}
+
+		&__close-burger-icon {
+			display: none;
+			vertical-align: middle;
+		}
+
+		&__mb-nav {
+			display: none;
+			display: none;
+			z-index: 1110;
+			position: fixed;
+			top: 77px;
+			left: 0;
+	       
+			padding: 64px 0 24px 24px;
+			width: 80%;
+			height: 100vh;
+			transform: translateX(-100%);
+			transition: all 500ms ease;
+			gap: 337px;
+			background-color: #333a44 ;
+		}
+        &__mb-nav.active {
+	    transition: all 500ms ease;
+        transform: translateX(0);
+		}
+		&__mb-list {
+			 display:flex;
+		     flex-direction: column;
+			 justify-content: start;
+			 align-items: start;
+			 @include df-column-center-start;
+			 gap: 24px;
+		}
+
+		&__mb-lists {
+		}
+
+		&__mb-links {
+		}
+
+		&__mb-texts {
+			color: $light__gray;
+			font-family: 'Space Mono';
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 25px;
+			letter-spacing: 0px;
+			&:visited{
+            color: $yellow;
+			}
+		}
+
+		&__mb-button {
+			display: none;
+			margin-top: 337px;
+			@include template-button;
+		}
+		&__mb-test-button {
+			display: none;
+            border: none;
+			outline: none;
+			background: none; 
+		}
+		&__mb-test-icon {
+	       vertical-align: middle;
+		}
+}
+@media(max-width:1024px){
+    .header {
+		box-shadow: rgb(252, 183, 43) 0px 5px 15px;
+		z-index: 1111;
+		backdrop-filter: blur(5px);
+		background-color: white;
+		width: 100%;
+		position: fixed;
+		&_list {
+        @include df-row-between-center ;
+	    gap: 32px;
+		}
+
+		&__container {
+			padding: 22px 40px;
+			@include df-row-between-center ;
+		}
+
+		&__left-box {
+			@include df-row-center-center ;
+			gap: 58.8px;
+		}
+
+		&__logo-link {
+			transition: 100ms ease all;
+			&:active{
+				transition: 100ms ease all;
+				opacity: 0.5;
+			}
+		}
+
+		&__logo-image {
+			vertical-align: middle;
+		}
+
+		&__nav {
+			display: block;
+		}
+
+		&__lists {
+	
+		}
+
+		&__links {
+		}
+
+		&__links-texts {
+			  font-family: 'Space Mono';
+			  font-weight: bold;
+			  font-size: 15px;
+			  line-height: 25px;
+			  letter-spacing: 0px;
+			  color: $dim__grey;
+		}
+
+		&__button {
+			@include template-button;
+			display: block ;
+		}
+
+		&__burger-button {
+			display: none;
+			border: none;
+			outline: none;
+			background: none;
+		}
+
+		&__open-burger-icon {
+				vertical-align: middle;
+		}
+
+		&__close-burger-icon {
+			display: none;
+			vertical-align: middle;
+		}
+
+		&__mb-nav {
+			display: none;
+			z-index: 1110;
+			position: fixed;
+			top: 99.5px;
+			left: 0;
+	       display: none;
+			padding: 64px 0 24px 24px;
+			width: 80%;
+			height: 100vh;
+			transform: translateX(-100%);
+			transition: all 500ms ease;
+			gap: 337px;
+			background-color: #333a44 ;
+		}
+        &__mb-nav.active {
+	    transition: all 500ms ease;
+        transform: translateX(0);
+		}
+		&__mb-list {
+			 display:flex;
+		     flex-direction: column;
+			 justify-content: start;
+			 align-items: start;
+			 @include df-column-center-start;
+			 gap: 24px;
+		}
+
+		&__mb-lists {
+		}
+
+		&__mb-links {
+		}
+
+		&__mb-texts {
+			color: $light__gray;
+			font-family: 'Space Mono';
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 25px;
+			letter-spacing: 0px;
+			&:visited{
+            color: $yellow;
+			}
+		}
+
+		&__mb-button {
+			display: none;
+			margin-top: 337px;
+			@include template-button;
+		}
+		&__mb-test-button {
+			display: none;
+            border: none;
+			outline: none;
+			background: none; 
+		}
+		&__mb-test-icon {
+	       vertical-align: middle;
+		}
+}
+}
+@media(max-width:767px){
+    .header {
+		&_list {
+		}
+
+		&__container {
+			padding: 24px 24px;
+			@include df-row-reverse-between-center ;
+		}
+
+		&__left-box {
+		}
+
+		&__logo-link {
+			transition: 100ms ease all;
+			&:active{
+				transition: 100ms ease all;
+				opacity: 0.5;
+			}
+		}
+
+		&__logo-image {
+			vertical-align: middle;
+		}
+
+		&__nav {
+			display: none;
+		}
+
+		&__lists {
+		}
+
+		&__links {
+		}
+
+		&__links.online .header__mb-links-texts{
+			color: $yellow;
+		}
+
+		&__button {
+			display: none;
+		}
+
+		&__burger-button {
+			display: block;
+			border: none;
+			outline: none;
+			background: none;
+		}
+
+		&__open-burger-icon {
+				vertical-align: middle;
+		}
+
+		&__close-burger-icon {
+			display: none;
+			vertical-align: middle;
+		}
+
+		&__mb-nav {
+			display: block;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: start;
+			position: fixed;
+			padding: 64px 24px 94px 24px;
+			z-index: 2;
+			top: 77px;
+			left: 0;
+			width: 85%;
+			height: 100vh;
+			transform: translateX(-100%);
+			transition: all 500ms ease;
+			background-color: #333a44 ;
+		}
+        &__mb-nav.active {
+	    transition: all 500ms ease;
+        transform: translateX(0);
+		}
+		&__mb-list {
+			 display:flex;
+		     flex-direction: column;
+			 justify-content: start;
+			 align-items: start;
+			 @include df-column-center-start;
+			 gap: 24px;
+		}
+
+		&__mb-lists {
+		}
+
+		&__mb-links.online .header__mb-texts{
+			color: $yellow;
+		}
+
+		&__mb-texts {
+			color: $light__gray;
+			font-family: 'Space Mono';
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 25px;
+			letter-spacing: 0px;
+			&:visited{
+            color: $yellow;
+			}
+		}
+
+		&__mb-button {
+			display: block;
+			margin-top: 590px;
+			@include template-button;
+		}
+		&__mb-test-button {
+			display: block;
+			opacity: 0;
+            border: none;
+			outline: none;
+			background: none; 
+		}
+		&__mb-test-icon {
+	       vertical-align: middle;
+		}
+}
+}

@@ -1,0 +1,147 @@
+.box {
+          margin-top: 120px;
+		&_texts {
+                  text-align: start;
+              font-family: 'Lexend Deca';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0px;
+            margin-bottom: 4px;
+            color: $dark__navy;
+            margin-bottom: 16px;
+		}
+
+		&__container {    
+            width: 100%;
+            @include df-column-center-center;
+            gap: 24px;
+		}
+
+		&__boxes {
+            padding: 34px 48px;
+            width: 100%;
+            background-color: $snow ;
+            @include df-row-between-center;
+
+		}
+&__mini-boxes{
+        @include df-column-center-center; 
+} 
+		&__titles {
+             text-align: start;
+            font-family: "Space Mono";
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07px;
+            margin-bottom: 8px;
+            color: $dark__navy;
+		}
+
+		&__buttons { 
+                 width:180px;
+            @include template-button;
+		}
+}
+
+@media(max-width:1024px){
+    .box {
+          margin-top: 120px;
+		&_texts {
+                  text-align: start;
+              font-family: 'Lexend Deca';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0px;
+            margin-bottom: 4px;
+            color: $dark__navy;
+            margin-bottom: 16px;
+		}
+
+		&__container {
+            padding-left: 40px;
+            padding-right: 40px;
+            width: 100%;
+            @include df-column-center-center;
+            gap: 16px;
+		}
+
+		&__boxes {
+            padding: 34px 48px;
+            width: 100%;
+            background-color: $snow ;
+            @include df-row-between-center;
+
+		}
+&__mini-boxes{
+        @include df-column-center-center; 
+} 
+		&__titles {
+             text-align: start;
+            font-family: "Space Mono";
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07px;
+            margin-bottom: 8px;
+            color: $dark__navy;
+		}
+
+		&__buttons { 
+                 width:180px;
+            @include template-button;
+		}
+}
+}
+@media(max-width:787px){
+    .box {
+margin-top: 145px;
+		&_texts {
+              font-family: 'Lexend Deca';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0px;
+            margin-bottom: 4px;
+            color: $dark__navy;
+            margin-bottom: 16px;
+		}
+
+		&__container {
+            padding-left: 24px;
+            padding-right: 24px;
+            width: 100%;
+            @include df-column-center-center;
+            gap: 16px;
+		}
+
+		&__boxes {
+            padding: 36px 32px;
+            width: 100%;
+            background-color: $snow ;
+            @include df-column-center-center;
+
+		}
+&__mini-boxes{
+        @include df-column-center-center; 
+} 
+		&__titles {
+                  text-align: center;
+            font-family: "Space Mono";
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.8px;
+            margin-bottom: 4px;
+            color: $dark__navy;
+		}
+
+		&__buttons {
+            width: 100%;   
+            @include template-button;
+		}
+}
+}
+

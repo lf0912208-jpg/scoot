@@ -1,0 +1,209 @@
+.better {
+        position: relative;
+         margin-top: 120px;
+         z-index: 2;
+          &::after{
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        width: 355px;
+                        height: 151px;
+                        left: 0;
+                        top: 0;
+                        background-image: url("../../images/destop_d.svg");
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                  }
+                   &::before{
+                    z-index: -1;
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        width: 95px;
+                        height: 445px;
+                        left: -0;
+                        top: 0px;
+                        transform: rotate(180deg);
+                        background-image: url(../../images/Mask.svg);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                  }
+
+    &__container {
+                   @include df-row-between-center;
+                   gap: 56px;
+    }
+
+    &__image {
+                  position: relative;
+                  width: 445px;
+                  height: 445px;
+                  border-radius: 50%;
+    }
+
+        &__text {
+                  width: 445px;
+                  text-align: start;
+                  font-family: 'Lexend Deca';
+                  margin-bottom: 40px;
+                  font-size: 15px;
+                  line-height: 25px;
+                  letter-spacing: 0px;
+                  color: $dim__grey;
+    }
+
+    &__left-box {
+             @include df-column-center-center;
+    }
+
+    &__title {
+             color: $dark__navy;
+                  width: 445px;
+                  font-family: 'Space Mono';
+                  text-align: start;
+                  margin-bottom: 24px;
+                  font-size: 48px;
+                  line-height: 48px;
+                  letter-spacing: -2.14px;
+    }
+}
+@media(max-width:1024px){
+    .better {
+        position: relative;
+         margin-top: 120px;
+          &::after{
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        width: 355px;
+                        height: 151px;
+                        left: 0;
+                        top: 0;
+                        background-image: url("../../images/tablet__d.svg");
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                  }
+                   &::before{
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        width: 95px;
+                        height: 445px;
+                        right: 0;
+                        top: 0px;
+                        transform: rotate(180deg);
+                        background-image: url(../../images/Mask.svg);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                  }
+
+    &__container {
+                   padding-right: 40px;
+                   padding-left: 40px;
+                   @include df-column-center-center;
+                   gap: 56px;
+    }
+
+    &__image {
+                  position: relative;
+                  width: 445px;
+                  height: 445px;
+                  border-radius: 50%;
+    }
+
+        &__text {
+                  width: 573px;
+                  text-align: center;
+                  font-family: 'Lexend Deca';
+                  margin-bottom: 40px;
+                  font-size: 15px;
+                  line-height: 25px;
+                  letter-spacing: 0px;
+                  color: $dim__grey;
+    }
+
+    &__left-box {
+             @include df-column-center-center;
+    }
+    &__title {
+             color: $dark__navy;
+                  width: 457px;
+                  font-family: 'Space Mono';
+                  text-align: center;
+                  margin-bottom: 40px;
+                  font-size: 48px;
+                  line-height: 48px;
+                  letter-spacing: -2.14px;
+    }
+}
+}
+@media(max-width:767px){
+    .better {
+        position: relative;
+         margin-top: 120px;
+          &::after{
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        width: 348px;
+                        height: 151px;
+                        left: 0;
+                        top: 0;
+                        background-image: url("../../images/mb_d.svg");
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                  }
+                   &::before{
+                        position: absolute;
+                        content: "";
+                        display: none;
+                        width: 95px;
+                        height: 445px;
+                        right: 0;
+                        top: 0px;
+                        background-image: url(../../images/Mask.svg);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                  }
+
+    &__container {
+                   padding-right: 24px;
+                   padding-left: 24px;
+                   @include df-column-center-center;
+                   gap: 56px;
+    }
+
+    &__image {
+                  position: relative;
+                  width: 311px;
+                  height: 311px;
+                  border-radius: 50%;
+    }
+
+        &__text {
+                  width: 100%;
+                  text-align: center;
+                  font-family: 'Lexend Deca';
+                  margin-bottom: 32px;
+                  font-size: 15px;
+                  line-height: 25px;
+                  letter-spacing: 0px;
+                  color: $dim__grey;
+    }
+
+    &__left-box {
+             @include df-column-center-center;
+    }
+
+    &__title {
+             color: $dark__navy;
+                  width: 100%;
+                  font-family: 'Space Mono';
+                  text-align: center;
+                  margin-bottom: 32px;
+                  font-size: 32px;
+                  line-height: 32px;
+                  letter-spacing: -1.43px;
+    }
+}
+}

@@ -1,0 +1,219 @@
+.cash{
+    position: relative;
+    margin-top: 145px;
+    z-index: 2;
+    &::after{
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 361px;
+                height: 151px;
+                right: 0;
+                top: 16%;
+                background-image: url(../../images/Group__17.svg);
+                background-repeat: no-repeat;
+                background-position: left center;
+            }
+            &::before{
+                  z-index: -1;
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 95px;
+                height: 445px;
+                right: -0px;
+                top: 0px; 
+                background-image: url(../../images/Mask.svg);
+                background-repeat: no-repeat;
+                background-position: left center;
+            
+            }
+		&__container { 
+            @include df-row-between-center;
+            gap: 56px;
+		}
+
+		&__left-box {
+          @include df-column-center-start;
+		}
+
+		&__title {
+            color: $dark__navy ;
+            width: 445px;
+            font-family: 'Space Mono';
+            text-align: start;
+            margin-bottom: 24px;
+            font-size:48px;
+            line-height: 48px;
+            letter-spacing: -2.14px;
+		}
+
+		&__text {
+            width: 445px;
+            font-family: 'Lexend Deca';
+            font-size: 15px;
+            line-height: 25px;
+            text-align: start;
+            letter-spacing: 0%;
+            margin-bottom: 40px;
+            color: $dim__grey;
+		}
+
+		&__button {
+       @include template-button;
+            
+		}
+		&__image {
+            width: 445px;
+            height: 445px;
+            border-radius: 50%;
+        
+		}
+}
+@media(max-width:1024px){
+    .cash {
+    position: relative;
+    margin-top: 145px;
+    &::after{
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 735px;
+                height: 151px;
+                right: 0;
+                top: 37%; 
+                background-image: url(../../images/easy__vector-tb.svg);
+                background-repeat: no-repeat;
+                background-position: left center;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 95px;
+                height: 445px;
+                right: 0;
+                top: 0px; 
+                background-image: url(../../images/Mask.svg);
+                background-repeat: no-repeat;
+                background-position: left center;
+            
+            }
+		&__container {
+            padding-right: 24px;
+            padding-left: 24px; 
+            @include df-column-reverse-center-center;
+            gap: 56px;
+		}
+
+		&__left-box {
+          @include df-column-center-center;
+		}
+
+		&__title {
+            color: $dark__navy ;
+            width: 457px;
+            font-family: 'Space Mono';
+            text-align: center;
+            margin-bottom: 40px;
+            font-size:48px;
+            line-height: 48px;
+            letter-spacing: -2.14px;
+		}
+
+		&__text {
+            width: 573px;
+            font-family: 'Lexend Deca';
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 0%;
+            margin-bottom: 40px;
+            color: $dim__grey;
+		}
+
+		&__button {
+       @include template-button;
+            
+		}
+		&__image {
+            width: 445px;
+            height: 445px;
+            border-radius: 50%;
+        
+		}
+}
+}
+@media(max-width:767px){
+    .cash {
+         position: relative;
+margin-top: 120px;
+&::after{
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 349px;
+                height: 151px;
+                right: 0;
+                top: 25%; 
+                background-image: url(../../images/easy__vector-mb.svg);
+                background-repeat: no-repeat;
+                background-position: left center;
+            }
+             &::before{
+                position: absolute;
+                content: "";
+                display: none;
+                width: 95px;
+                height: 445px;
+                right: 0;
+                top: 0px; 
+                background-image: url(../../images/Mask.svg);
+                background-repeat: no-repeat;
+                background-position: left center;
+            
+            }
+		&__container {
+            padding-right: 24px;
+            padding-left: 24px; 
+            @include df-column-reverse-center-center;
+            gap: 56px;
+		}
+
+		&__left-box {
+          @include df-column-center-center;
+		}
+
+		&__title {
+            color: $dark__navy ;
+            width: 100%;
+            font-family: 'Space Mono';
+            text-align: center;
+            margin-bottom: 32px;
+            font-size: 32px;
+            letter-spacing: -1.43px;
+		}
+
+		&__text {
+            width: 100%;
+            font-family: 'Lexend Deca';
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 0%;
+            margin-bottom: 32px;
+            color: $dim__grey;
+		}
+
+		&__button {
+       @include template-button;
+            
+		}
+		&__image {
+            width: 311px;
+            height: 311px;
+            border-radius: 50%;
+        
+		}
+}
+}

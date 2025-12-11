@@ -1,0 +1,178 @@
+.join {
+        margin-top: 120px;
+
+    &__container {
+            @include df-column-center-center;
+            gap: 103px;
+    }
+
+         &__title {
+            color: $dark__navy;
+            text-align: center;
+            font-family: 'Space Mono';
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14px;
+        }
+
+        &__box {
+            width: 100%;
+             @include df-row-between-center;
+             gap: 0px
+        }
+
+    &__boxes {
+            @include df-column-center-center;
+    }
+
+    &__images {
+            width: 240px ;
+            height: 288px ;
+            margin-bottom: 32px;
+    }
+
+    &__titles {
+            color: $dark__navy;
+            text-align: center;
+            font-family: 'Space Mono';
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 27px;
+            letter-spacing: -1.07px;
+    }
+
+    &__texts {
+            font-weight: 400;
+            color: $dim__grey;
+            text-align: center;
+            width: 350px;
+             font-family: 'Space Mono';
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 50px;
+            letter-spacing: 0px;
+    }
+}
+@media(max-width:1024px){
+    .join {
+        margin-top: 120px;
+
+    &__container {
+            padding-right: 40px;
+            padding-left: 40px;
+            @include df-column-center-center;
+            gap: 105px;
+    }
+
+         &__title {
+            color: $dark__navy;
+            text-align: center;
+            font-family: 'Space Mono';
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14px;
+        }
+
+        &__box {
+            width: auto;
+             @include df-column-center-center;
+             gap: 55px
+        }
+
+    &__boxes {
+            @include df-column-center-center;
+    }
+
+    &__images {
+            width: 240px ;
+            height: 288px ;
+            margin-bottom: 32px;
+    }
+
+    &__titles {
+            color: $dark__navy;
+            text-align: center;
+            font-family: 'Space Mono';
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 27px;
+            letter-spacing: -1.07px;
+    }
+
+    &__texts {
+            font-weight: 400;
+            color: $dim__grey;
+            text-align: center;
+            width: 457px;
+             font-family: 'Space Mono';
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 50px;
+            letter-spacing: 0px;
+    }
+}
+}
+@media(max-width:767px){
+    .join {
+        margin-top: 120px;
+
+    &__container {
+            padding-right: 24px;
+            padding-left: 24px;
+            @include df-column-center-center;
+            gap: 64px;
+    }
+
+         &__title {
+            color: $dark__navy;
+            text-align: center;
+            font-family: 'Space Mono';
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+        }
+
+        &__box {
+             @include df-column-center-center;
+             gap: 56px
+        }
+
+    &__boxes {
+            @include df-column-center-center;
+    }
+
+    &__images {
+            width: 240px ;
+            height: 288px ;
+            margin-bottom: 16px;
+    }
+
+    &__titles {
+            color: $dark__navy;
+            text-align: center;
+            font-family: 'Space Mono';
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 27px;
+            letter-spacing: -1.07px;
+    }
+
+    &__texts {
+            font-weight: 400;
+            color: $dim__grey;
+            text-align: center;
+            width: 100%;
+             font-family: 'Space Mono';
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 50px;
+            letter-spacing: 0px;
+    }
+}
+}

@@ -1,0 +1,205 @@
+.era {
+    position: relative;
+    margin-top: 120px;
+    &::after{
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        width: 742px;
+                        height: 151px;
+                        right: 0;
+                       bottom: 0;
+                        background-image: url("../../images/destop__s.svg");
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                  }
+                  &::before{
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        width: 95px;
+                        height: 445px;
+                        right: 0;
+                        top: 0px;
+                        background-image: url(../../images/Mask.svg);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                  }
+
+    &__container {
+                  @include df-row-between-center;
+                   gap: 56px;
+    }
+
+    &__left-box {
+             @include df-column-center-center;
+    }
+
+    &__title {
+                  color: $dark__navy;
+                  width: 457px;
+                  font-family: 'Space Mono';
+                  text-align: start;
+                  margin-bottom: 24px;
+                  font-size: 48px;
+                  line-height: 48px;
+                  letter-spacing: -2.14px;
+    }
+
+    &__text {
+                  width: 445px;
+                  text-align: start;
+                  font-family: 'Lexend Deca';
+                  margin-bottom: 40px;
+                  font-size: 15px;
+                  line-height: 25px;
+                  letter-spacing: 0px;
+                  color: $dim__grey;
+    }
+
+    &__image {
+                  position: relative;
+                  width: 445px;
+                  height: 445px;
+                  border-radius: 50%;
+    }
+}
+@media(max-width:1024px){
+.era {
+    position: relative;
+    margin-top: 120px;
+    &::after{
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        width: 728px;
+                        height: 114px;
+                        right: 0;
+                        top: 37%;
+                        background-image: url("../../images/tablet_s.svg");
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                  }
+                  &::before{
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        width: 95px;
+                        height: 445px;
+                        right: 0;
+                        top: 0px;
+                        background-image: url(../../images/Mask.svg);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                  }
+
+    &__container {
+                   padding-right: 40px;
+                   padding-left: 40px;
+                   @include df-column-reverse-center-center;
+                   gap: 56px;
+    }
+
+    &__left-box {
+             @include df-column-center-center;
+    }
+
+    &__title {
+                  color: $dark__navy;
+                  width: 457px;
+                  font-family: 'Space Mono';
+                  text-align: center;
+                  margin-bottom: 40px;
+                  font-size: 48px;
+                  line-height: 48px;
+                  letter-spacing: -2.14px;
+    }
+
+    &__text {
+                  width: 573px;
+                  text-align: center;
+                  font-family: 'Lexend Deca';
+                  margin-bottom: 40px;
+                  font-size: 15px;
+                  line-height: 25px;
+                  letter-spacing: 0px;
+                  color: $dim__grey;
+    }
+    &__image {
+                  position: relative;
+                  width: 445px;
+                  height: 445px;
+                  border-radius: 50%;
+    }
+}
+}
+@media(max-width:767px){
+.era {
+    position: relative;
+    margin-top: 72px;
+    &::after{
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        width: 349px;
+                        height: 151px;
+                        right: 0;
+                        top: 22%;
+                        background-image: url("../../icons/girl__vector.svg");
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                  }
+                  &::before{
+                        position: absolute;
+                        content: "";
+                        display: none;
+                        width: 95px;
+                        height: 445px;
+                        right: 0;
+                        top: 0px;
+                        background-image: url(../../images/Mask.svg);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                  }
+
+    &__container {
+                   padding-right: 24px;
+                   padding-left: 24px;
+                   @include df-column-reverse-center-center;
+                   gap: 56px;
+    }
+
+    &__left-box {
+             @include df-column-center-center;
+    }
+
+    &__title {
+                  color: $dark__navy;
+                  width: 100%;
+                  font-family: 'Space Mono';
+                  text-align: center;
+                  margin-bottom: 32px;
+                  font-size: 32px;
+                  line-height: 32px;
+                  letter-spacing: -1.43px;
+    }
+
+    &__text {
+                  width: 100%;
+                  text-align: center;
+                  font-family: 'Lexend Deca';
+                  margin-bottom: 32px;
+                  font-size: 15px;
+                  line-height: 25px;
+                  letter-spacing: 0px;
+                  color: $dim__grey;
+    }
+
+    &__image {
+                  position: relative;
+                  width: 311px;
+                  height: 311px;
+                  border-radius: 50%;
+    }
+}
+}

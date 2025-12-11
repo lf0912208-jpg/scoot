@@ -1,0 +1,108 @@
+   .careers {
+    position: relative;
+width: 100%;
+background-image: url(../../icons/careers__backround.svg);
+background-position: bottom center;
+background-repeat: no-repeat;
+background-size: cover;
+&::after{
+    position: absolute;
+    content: "";
+    display: none;
+    width: 203px;
+    height: 63px;
+    bottom: 0px;
+    right: 0;
+    background-image: url(../../icons/about__trixy.svg);
+}
+		&__container {
+            padding-top: 72px;
+            padding-bottom: 72px;
+            @include df-row-center-center;
+		}
+
+		&__title {
+font-family: 'Space Mono';
+font-weight: bold;
+font-size: 56px;
+line-height: 56px;
+color: $white;
+margin-right: auto;
+letter-spacing: -2.5px;
+		}
+}
+ @media(max-width:1024px){
+   .careers {
+    position: relative;
+width: 100%;
+background-image: url(../../icons/careers__backround-tb.svg);
+background-position: bottom center;
+background-repeat: no-repeat;
+background-size: contain;
+&::after{
+    position: absolute;
+    content: "";
+    display: none;
+    width: 203px;
+    height: 63px;
+    bottom: 0px;
+    right: 0;
+    background-image: url(../../icons/about__trixy.svg);
+}
+		&__container {
+            padding: 164px 40px 72px 40px;
+            @include df-row-center-center;
+		}
+
+		&__title {
+font-family: 'Space Mono';
+font-weight: bold;
+font-size: 56px;
+line-height: 56px;
+color: $white;
+margin-right: auto;
+letter-spacing: -2.5px;
+		}
+}
+ 
+}
+@media(max-width:767px){
+   .careers  {
+    position: relative;
+width: 100%;
+background-image: url(../../icons/careers__backround-mb.jpg);
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
+&::after{
+    position: absolute;
+    content: "";
+    display: none;
+    width: 203px;
+    height: 63px;
+    bottom: 68px;
+    right: 0;
+    background-image: url(../../icons/about__trixy.svg);
+}
+		&__container {
+            padding: 164px 40px 72px 40px;
+            @include df-row-center-center;
+		}
+		&__container {
+            padding: 120px 24px 60px 24px;
+            @include df-row-center-center;
+		}
+
+		&__title {
+font-family: 'Space Mono';
+font-weight: bold;
+font-size: 40px;
+line-height: 40px;
+color: $white;
+text-align: center;
+margin-right: 0;
+letter-spacing: -1.79px;
+		}
+}
+ 
+}

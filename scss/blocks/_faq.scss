@@ -1,0 +1,249 @@
+.faq {
+ margin-top: 120px;
+		&__container {
+            @include  df-column-center-center;
+            gap: 64px;
+		}
+
+		&__title {
+                font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14px;
+             color: $dark__navy;
+		}
+
+		&__bottom-box {
+              @include  df-column-center-center;
+ gap: 64px;
+		}
+
+		&__bottom-boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+            gap:0px;
+		}
+
+		&__bottom-boxes-title {
+              font-family: 'Space Mono';
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -1.79px;
+             color: $dark__navy;
+		}
+
+		&__main-box {
+            width: 730px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+		}
+
+		&__bottom-mini-boxes {
+            width: 730px;
+            padding: 32px 32px;
+            gap: 32px;
+            
+        @include  df-column-center-start; 
+           background-color: $snow;
+		}
+
+		&__bottom-mini-open-boxes {
+                  cursor: pointer;
+            width: 100%;
+             @include df-row-between-center;
+		}
+
+		&__bottom-mini-boxes-tiles {
+            width: 100%;
+             font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07px;
+             color: $dark__navy;
+		}
+
+		&__bottom-mini-boxes-texts {
+            display: none;
+            width: 650px;
+             font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0px;
+             color: $dark__navy;
+		}
+} 
+@media(max-width:1024px){
+.faq {
+ margin-top: 120px;
+		&__container {
+            padding-right: 40px;
+            padding-left: 40px;
+            @include  df-column-center-center;
+            gap: 64px;
+		}
+
+		&__title {
+                font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14px;
+             color: $dark__navy;
+		}
+
+		&__bottom-box {
+              @include  df-column-center-center;
+ gap: 64px;
+		}
+
+		&__bottom-boxes {
+            @include  df-column-center-center;
+            gap:32px;
+		}
+
+		&__bottom-boxes-title {
+              font-family: 'Space Mono';
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -1.79px;
+             color: $dark__navy;
+		}
+
+		&__main-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+		}
+
+		&__bottom-mini-boxes {
+            margin-bottom: 16px;
+            padding: 32px 40px;
+            gap: 32px;
+            width: 100%;
+            @include  df-column-center-start; 
+           background-color: $snow;
+		}
+
+		&__bottom-mini-open-boxes {
+            width: 100%;
+             @include df-row-between-center;
+		}
+
+		&__bottom-mini-boxes-tiles {
+            width: 100%;
+             font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07px;
+             color: $dark__navy;
+		}
+
+		&__bottom-mini-boxes-texts {
+            width:auto;
+             font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0px;
+             color: $dark__navy;
+		}
+}
+}
+@media(max-width:767px){
+.faq {
+ margin-top: 145px;
+		&__container {
+            padding-right: 24px;
+            padding-left: 24px;
+            @include  df-column-center-center;
+            gap: 48px;
+		}
+
+		&__title {
+                font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+             color: $dark__navy;
+		}
+
+		&__bottom-box {
+              @include  df-column-center-center;
+ gap: 48px;
+		}
+
+		&__bottom-boxes {
+            @include  df-column-center-center;
+            gap: 32px;
+		}
+
+		&__bottom-boxes-title {
+              font-family: 'Space Mono';
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            
+             color: $dark__navy;
+		}
+
+		&__main-box {
+                  width: 311px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+		}
+
+		&__bottom-mini-boxes {
+                  width: 311px;
+            padding: 32px 32px;
+            gap: 32px;
+            width: 100%;
+                @include  df-column-center-start; 
+                
+           background-color: $snow;
+		}
+
+		&__bottom-mini-open-boxes {
+            width: 100%;
+             @include df-row-between-center;
+		}
+
+		&__bottom-mini-boxes-tiles {
+            width: 219px;
+             font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.18px;
+             color: $dark__navy;
+		}
+
+		&__bottom-mini-boxes-texts {
+             font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0px;
+             color: $dark__navy;
+		}
+}
+}
+
+
+
